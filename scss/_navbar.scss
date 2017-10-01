@@ -13,7 +13,8 @@
   }
   .navbar-brand {
     color: $theme-primary;
-    @include script-font;
+    @include heading-font;
+    font-weight: bold;
     &.active,
     &:active,
     &:focus,
@@ -38,7 +39,8 @@
     }
   }
 }
-@media(min-width:992px) {
+
+@media(min-width: 992px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
