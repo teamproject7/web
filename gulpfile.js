@@ -23,7 +23,7 @@ gulp.task('sass', function() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -38,7 +38,7 @@ gulp.task('minify-css', ['sass'], function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -54,7 +54,7 @@ gulp.task('minify-js', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('public/js'))
     .pipe(browserSync.reload({
       stream: true
     }))

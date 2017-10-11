@@ -14,7 +14,7 @@
   .navbar-brand {
     color: $theme-primary;
     @include heading-font;
-    font-weight: bold;
+    //font-weight: bold;
     &.active,
     &:active,
     &:focus,
